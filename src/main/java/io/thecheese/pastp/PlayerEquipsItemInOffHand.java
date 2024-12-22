@@ -5,7 +5,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,7 +15,7 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class PlayerEquipsItemInOffHand {
     @SubscribeEvent
-    public static void LivingEquipmentChangeEvent(LivingEquipmentChangeEvent event) {
+    public static void onLivingEquipmentChange(LivingEquipmentChangeEvent event) {
         if (event != null && event.getEntity() != null) {
             execute(event, event.getEntity(), event.getSlot(), event.getTo(), event.getFrom());
         }
@@ -29,13 +28,17 @@ public class PlayerEquipsItemInOffHand {
     private static void execute(@Nullable Event event, Entity entity, EquipmentSlot slot, ItemStack itemTo, ItemStack itemFrom) {
         if (entity == null)
             return;
+
         if (entity instanceof Player player) {
+            // Check if the slot is an armor slot
+            if ((slot == EquipmentSlot.HEAD)
+                    && itemTo.getItem() == ModItems.MUSHROOM_HAT.get()
+                    && !itemFrom.isEmpty()) {
 
-
-
-            if (slot.isArmor() && itemTo == ModItems.MUSHROOM_HAT && itemFrom != ItemStacks.AIR) {
+                // Try to add the previous item to the inventory
                 boolean added = player.getInventory().add(itemFrom);
 
+                // If the inventory is full, drop the item
                 if (!added && !player.level().isClientSide) {
                     player.drop(itemFrom, false);
                 }

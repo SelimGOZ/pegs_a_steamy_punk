@@ -17,6 +17,6 @@ public class Main {
         CreativeTabInit.PASTP.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register event handlers
-        MinecraftForge.EVENT_BUS.register(PlayerEventHandler.class);
+        MinecraftForge.EVENT_BUS.register(PlayerEquipsItemInOffHand.class);
     }
 }
