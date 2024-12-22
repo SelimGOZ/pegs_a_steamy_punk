@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class PlayerEquipsItemInOffHand {
+public class MushiItemOnHead {
     @SubscribeEvent
     public static void onLivingEquipmentChange(LivingEquipmentChangeEvent event) {
         if (event != null && event.getEntity() != null) {
@@ -31,8 +31,8 @@ public class PlayerEquipsItemInOffHand {
 
         if (entity instanceof Player player) {
             // Check if the slot is an armor slot
-            if ((slot == EquipmentSlot.HEAD)
-                    && itemTo.getItem() == ModItems.MUSHROOM_HAT.get()
+            if ((slot == EquipmentSlot.HEAD || slot == EquipmentSlot.CHEST || slot == EquipmentSlot.LEGS || slot == EquipmentSlot.FEET)
+                    && itemTo.getItem() == ModItems.MUSHI_HAT.get()
                     && !itemFrom.isEmpty()) {
 
                 // Try to add the previous item to the inventory

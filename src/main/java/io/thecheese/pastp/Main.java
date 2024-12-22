@@ -17,6 +17,8 @@ public class Main {
         CreativeTabInit.PASTP.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register event handlers
-        MinecraftForge.EVENT_BUS.register(PlayerEquipsItemInOffHand.class);
+        MinecraftForge.EVENT_BUS.register(MushroomItemOnHead.class);
+        MinecraftForge.EVENT_BUS.register(SteampunkHatOnHead.class);
+        MinecraftForge.EVENT_BUS.register(MushiItemOnHead.class);
     }
 }
