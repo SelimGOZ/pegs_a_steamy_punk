@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MLM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:red_mushroom"
+    },
+    "L": {
+      "item": "minecraft:leather_helmet"
+    }
+  },
+  "result": {
+    "item": "pegs_a_steamy_punk:mushroom_hat",
+    "count": 1
+  }
+}

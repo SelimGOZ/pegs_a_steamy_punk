@@ -1,0 +1,86 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "pegs_a_steamy_punk:item/mushroom_hat"
+	},
+	"elements": [
+		{
+			"from": [0, 6, 0],
+			"to": [16, 7, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6.5, 8]},
+			"faces": {
+				"north": {"uv": [2, 2, 4, 2.125], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 2.125], "texture": "#0"},
+				"south": {"uv": [6, 2, 8, 2.125], "texture": "#0"},
+				"west": {"uv": [4, 2, 6, 2.125], "texture": "#0"},
+				"up": {"uv": [4, 2, 2, 0], "texture": "#0"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 7, 2],
+			"to": [14, 8, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 8]},
+			"faces": {
+				"north": {"uv": [1.5, 3.75, 3, 3.875], "texture": "#0"},
+				"east": {"uv": [0, 3.75, 1.5, 3.875], "texture": "#0"},
+				"south": {"uv": [4.5, 3.75, 6, 3.875], "texture": "#0"},
+				"west": {"uv": [3, 3.75, 4.5, 3.875], "texture": "#0"},
+				"up": {"uv": [3, 3.75, 1.5, 2.25], "texture": "#0"},
+				"down": {"uv": [4.5, 2.25, 3, 3.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 8, 3],
+			"to": [13, 9, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.25, 5.25, 2.5, 5.375], "texture": "#0"},
+				"east": {"uv": [0, 5.25, 1.25, 5.375], "texture": "#0"},
+				"south": {"uv": [3.75, 5.25, 5, 5.375], "texture": "#0"},
+				"west": {"uv": [2.5, 5.25, 3.75, 5.375], "texture": "#0"},
+				"up": {"uv": [2.5, 5.25, 1.25, 4], "texture": "#0"},
+				"down": {"uv": [3.75, 4, 2.5, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 9, 5],
+			"to": [11, 10, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [5.875, 4.75, 6.625, 4.875], "texture": "#0"},
+				"east": {"uv": [5.125, 4.75, 5.875, 4.875], "texture": "#0"},
+				"south": {"uv": [7.375, 4.75, 8.125, 4.875], "texture": "#0"},
+				"west": {"uv": [6.625, 4.75, 7.375, 4.875], "texture": "#0"},
+				"up": {"uv": [6.625, 4.75, 5.875, 4], "texture": "#0"},
+				"down": {"uv": [7.375, 4, 6.625, 4.75], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-5.9, -15.41, -41.7]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-5.9, -15.41, -41.7]
+		},
+		"head": {
+			"rotation": [15.25, 0, 0],
+			"translation": [0, 6.25, 1],
+			"scale": [1.8, 1.8, 1.8]
+		},
+		"fixed": {
+			"rotation": [-90, 0, 0],
+			"translation": [0, 0, -0.25]
+		}
+	},
+	"groups": [
+		{
+			"name": "mushroom_hat",
+			"origin": [8, 6, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

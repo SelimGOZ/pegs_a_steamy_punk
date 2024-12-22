@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RLR",
+    "BRB",
+    "LLL"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:red_wool"
+    },
+    "L": {
+      "item": "minecraft:black_wool"
+    },
+    "B": {
+      "item": "minecraft:blue_stained_glass_pane"
+    }
+  },
+  "result": {
+    "item": "pegs_a_steamy_punk:steampunk_hat",
+    "count": 1
+  }
+}
